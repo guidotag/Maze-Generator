@@ -109,7 +109,6 @@ int main(){
 		
 		if(i + di[d] >= 0 && i + di[d] < n && j + dj[d] >= 0 && j + dj[d] < m){
 			if(find(i, j) != find(i + di[d], j + dj[d])){
-				/* If two
 				merge(i, j, i + di[d], j + dj[d]);
 				square[i][j][d] = false;
 				square[i + di[d]][j + dj[d]][convert(d)] = false;
