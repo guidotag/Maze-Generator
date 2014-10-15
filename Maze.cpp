@@ -139,13 +139,13 @@ int main(){
 					}
 				}else{
 					/* Link:    
-					 * 				    up
-					 * (i - 1, j - 1)	║
-					 * 					║
-					 * 			left ═══╬═══ right
-					 * 					║
-					 * 					║	(i, j)
-					 *  	 		  down
+					 *                  up
+					 * (i - 1, j - 1)   ║
+					 *                  ║
+					 *          left ═══╬═══ right
+					 *                  ║
+					 *                  ║   (i, j)
+					 *                 down
 					 */		   
 					
 					bool right = square[i][j][UP];
