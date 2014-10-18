@@ -7,4 +7,8 @@ We can model this situation with a graph, in which each square in the rectangula
 
 To test if two vertices are connected by some path and, if so, connect them, I used a disjoint-set forests representation with two standard optimization heuristics (path compression and union-by-rank).
 
-The program's input is simply the grid's dimensions.
+The program expects two arguments n and m, the grid's height and width respectively. So, for example,
+
+./Maze 10 30
+
+prints a random maze of 10 * 30.

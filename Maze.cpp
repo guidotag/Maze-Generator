@@ -89,14 +89,13 @@ int convert(int d){
 	return RIGHT;
 }
 
-int main(){
+int main(int argc, char *argv[]){
 	ios_base::sync_with_stdio(0);
 	
 	srand(time(NULL));
-	cout << "n = ";
-	cin >> n;
-	cout << "m = ";
-	cin >> m;
+	
+	n = atoi(argv[1]);
+	m = atoi(argv[2]);
 		
 	init();
 	
@@ -118,7 +117,7 @@ int main(){
 
 	/* Print the maze. */
 		
-	for(int i = 0; i < n; i++){
+	for(int i = 0; i < n; i++){	
 		for(int j = 0; j < m; j++){
 			if(i == 0){
 				if(j == 0){
