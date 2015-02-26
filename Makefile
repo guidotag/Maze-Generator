@@ -1,12 +1,17 @@
-GXX = g++
+CXX = g++
+CXXFLAGS = -O2 -Wall -std=c++0x -pedantic
 
-.PHONY: all clean
+BIN = Maze
+OBJS = Maze.o
 
-all: Maze.o
-	$(GXX) -o Maze $<
+.PHONY: clean
+
+$(BIN): $(OBJS)
+	$(CXX) $(OBJS) -o $(BIN)
 	
 %.o: %.cpp
-	$(GXX) -c -o $@ $<
+	$(CXX) $(CXXFLAGS) -c $<
 
 clean:
-	rm -f Maze Maze.o
+	rm -f $(BIN)
+	rm -f $(OBJS)
