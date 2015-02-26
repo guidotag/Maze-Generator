@@ -78,7 +78,9 @@ void init(){
 }
 
 int random(int a, int b){
-	double u = rand() / (double) RAND_MAX;
+	int r;
+	while((r = rand()) == RAND_MAX);
+	double u = r / (double) RAND_MAX;
 	return (int)((b - a + 1) * u) + a;
 }
 
