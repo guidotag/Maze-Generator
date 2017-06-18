@@ -12,3 +12,5 @@ The program expects two arguments n and m, the grid's height and width respectiv
 ./Maze 10 30
 
 prints a random maze of 10 * 30.
+
+![example](maze.gif "Example")
